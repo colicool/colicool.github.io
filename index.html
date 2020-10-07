@@ -11,8 +11,18 @@
     <meta property="og:image" content="./funeemonkee.jpg">
 </head>
 <body>
-    <iframe width="95%" height="900" src="https://www.youtube-nocookie.com/embed/apPsjYs6HmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <img src="./funeemonkee.jpg" alt="funee monkee" hidden=1>
-    <video src="./funeemonkee.mp4" hidden=1></video>
+
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="SamplePlayerDivID"></div>
+<script type="text/javascript">
+  var options = {
+    width: 854,
+    height: 480,
+    channel: "xqcow",
+    parent: ["colicool.github.io"]
+  };
+  var player = new Twitch.Player("SamplePlayerDivID", options);
+</script>
+
 </body>
 </html>
