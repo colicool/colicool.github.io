@@ -13,15 +13,91 @@
 <body>
 
 <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-<div id="SamplePlayerDivID"></div>
+<div> 
+    <div id="embed0"></div>
+    <div id="embed1"></div>
+    <div id="embed2"></div>
+</div>
+<br>
+<div> 
+    <div id="embed3"></div>
+    <div id="embed4"></div>
+    <div id="embed5"></div>
+</div>
+<br>
+<div>
+    <div id="embed6"></div>
+    <div id="embed7"></div>
+    <div id="embed8"></div>
+    <div id="embed9"></div>
+</div>
+x = ["xqcow","ludwig","jellypeanut","5uppp"]
 <script type="text/javascript">
-  var options = {
-    width: 854,
-    height: 480,
-    channel: "xqcow",
+  var options0 = {
+    width: "33%",
+    height: "33%",
+    channel: x[0],
     parent: ["colicool.github.io"]
   };
-  var player = new Twitch.Player("SamplePlayerDivID", options);
+  var options1 = {
+    width: "33%",
+    height: "33%",
+    channel: x[1],
+    parent: ["colicool.github.io"]
+  };
+  var options2 = {
+    width: "33%",
+    height: "33%",
+    channel: x[2],
+    parent: ["colicool.github.io"]
+  };
+  var options3 = {
+    width: "33%",
+    height: "33%",
+    channel: x[3],
+    parent: ["colicool.github.io"]
+  };
+  var options4 = {
+    width: "33%",
+    height: "33%",
+    channel: x[4],
+    parent: ["colicool.github.io"]
+  };
+  var options5 = {
+    width: "33%",
+    height: "33%",
+    channel: x[5],
+    parent: ["colicool.github.io"]
+  };
+  var options6 = {
+    width: "33%",
+    height: "33%",
+    channel: x[6],
+    parent: ["colicool.github.io"]
+  };
+  var options7 = {
+    width: "33%",
+    height: "33%",
+    channel: x[7],
+    parent: ["colicool.github.io"]
+  };
+  var options8 = {
+    width: "33%",
+    height: "33%",
+    channel: x[8],
+    parent: ["colicool.github.io"]
+  };
+  var options9 = {
+    width: "33%",
+    height: "33%",
+    channel: x[9],
+    parent: ["colicool.github.io"]
+  };
+  var i;
+for (i = 0; i < x.length-1; i++) {
+    var player = new Twitch.Player(`embed${i}`, `${options}${i}`);
+}
+  
 </script>
 
 </body>
